@@ -22,35 +22,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="MetaSearch" />
-      </profile>
-      <profile default="false" name="Annotation profile for SpiderBasic" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="SpiderBasic" />
-      </profile>
-      <profile default="false" name="Annotation profile for izhonghong" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="izhonghong" />
-      </profile>
-      <profile default="false" name="Annotation profile for LearnNewJava" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="LearnNewJava" />
+        <module name="MetaSearch" />
+        <module name="SpiderBasic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="izhonghong" target="1.6" />
+      <module name="izhonghong" target="1.5" />
       <module name="LearnNewJava" target="1.6" />
       <module name="MetaSearch" target="1.5" />
-      <module name="SpiderBasic" target="1.6" />
+      <module name="SpiderBasic" target="1.5" />
       <module name="twin-project" target="1.5" />
       <module name="Twin-World" target="1.5" />
     </bytecodeTargetLevel>

@@ -6,8 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/MetaSearch/MetaSearch.iml" filepath="$PROJECT_DIR$/MetaSearch/MetaSearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpiderBasic/SpiderBasic.iml" filepath="$PROJECT_DIR$/SpiderBasic/SpiderBasic.iml" />
       <module fileurl="file://$PROJECT_DIR$/LearnNewJava/TextFetch/TextFetch.iml" filepath="$PROJECT_DIR$/LearnNewJava/TextFetch/TextFetch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Twin-World.iml" filepath="$PROJECT_DIR$/Twin-World.iml" />
       <module fileurl="file://$PROJECT_DIR$/izhonghong/izhonghong.iml" filepath="$PROJECT_DIR$/izhonghong/izhonghong.iml" />
-      <module fileurl="file://$PROJECT_DIR$/twin-project.iml" filepath="$PROJECT_DIR$/twin-project.iml" />
     </modules>
   </component>
 </project>
