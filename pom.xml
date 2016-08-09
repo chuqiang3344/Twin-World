@@ -13,7 +13,6 @@
         <module>SpiderBasic</module>
         <module>izhonghong</module>
         <module>LearnNewJava</module>
-        <module>TextFetch</module>
     </modules>
 
     <dependencies>

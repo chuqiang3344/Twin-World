@@ -22,19 +22,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="api-study" />
         <module name="izhonghong" />
-        <module name="LearnNewJava" />
-        <module name="MetaSearch" />
-        <module name="SpiderBasic" />
+        <module name="meta-search" />
+        <module name="spider-basic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-study" target="1.6" />
       <module name="izhonghong" target="1.6" />
-      <module name="LearnNewJava" target="1.6" />
-      <module name="MetaSearch" target="1.5" />
-      <module name="SpiderBasic" target="1.6" />
+      <module name="meta-search" target="1.5" />
+      <module name="spider-basic" target="1.6" />
       <module name="twin-project" target="1.5" />
-      <module name="Twin-World" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
