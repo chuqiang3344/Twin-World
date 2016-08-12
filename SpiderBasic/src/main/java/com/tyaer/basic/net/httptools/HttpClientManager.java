@@ -1,21 +1,5 @@
 package com.tyaer.basic.net.httptools;
 
-import org.apache.http.HeaderElement;
-import org.apache.http.HeaderElementIterator;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.conn.ConnectionKeepAliveStrategy;
-import org.apache.http.conn.HttpClientConnectionManager;
-import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.impl.client.HttpClients;
-import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
-import org.apache.http.message.BasicHeaderElementIterator;
-import org.apache.http.protocol.HTTP;
-import org.apache.http.protocol.HttpContext;
-import org.apache.http.util.Args;
-
-import java.util.concurrent.TimeUnit;
-
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.params.CookiePolicy;
 import org.apache.http.client.params.HttpClientParams;
@@ -34,7 +18,7 @@ import org.apache.http.params.HttpParams;
 
 /**
  * http协议代理请求工具管理器
- * */
+ */
 public class HttpClientManager {
 
     private static HttpParams httpParams;
@@ -70,13 +54,13 @@ public class HttpClientManager {
         // 设置每个路由最大连接数
         ConnPerRouteBean connPerRoute = new ConnPerRouteBean(MAX_ROUTE_CONNECTIONS);
 
-        ConnManagerParams.setMaxConnectionsPerRoute(httpParams,connPerRoute);
+        ConnManagerParams.setMaxConnectionsPerRoute(httpParams, connPerRoute);
         // 设置连接超时时间
         HttpConnectionParams.setConnectionTimeout(httpParams, CONNECT_TIMEOUT);
         // 设置读取超时时间
         HttpConnectionParams.setSoTimeout(httpParams, READ_TIMEOUT);
         // 设置接收cookie
-        HttpClientParams.setCookiePolicy(httpParams,CookiePolicy.BROWSER_COMPATIBILITY);
+        HttpClientParams.setCookiePolicy(httpParams, CookiePolicy.BROWSER_COMPATIBILITY);
         SchemeRegistry registry = new SchemeRegistry();
         registry.register(new Scheme("http", PlainSocketFactory.getSocketFactory(), 80));
         registry.register(new Scheme("https", SSLSocketFactory.getSocketFactory(), 443));

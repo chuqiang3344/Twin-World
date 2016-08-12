@@ -12,7 +12,7 @@ import java.util.Set;
 
 /**
  * cookie获取根据
- * 
+ *
  * @author Twin
  *
  */
@@ -20,9 +20,9 @@ public class WebClientUtils {
 
 	protected static Logger LOGGER = Logger.getLogger(WebClientUtils.class
 			.getName());
-	
+
 	private WebClient _WebClient = null;
-	
+
 	public WebClientUtils() {
 		_WebClient = new WebClient(BrowserVersion.FIREFOX_38);
 		// htmlunit 对css和javascript的支持不好，所以请关闭之。url为JS请求则必须打开！
@@ -53,7 +53,7 @@ public class WebClientUtils {
 		}
 		return str_cookie;
 	}
-	
+
 	/**
 	 * 关闭WebClient
 	 */
@@ -84,7 +84,7 @@ public class WebClientUtils {
 
 	/**
 	 * 网站基本信息展示
-	 * 
+	 *
 	 * @param str_url
 	 */
 	public static void showBaseInfo(String str_url) {
@@ -134,23 +134,21 @@ public class WebClientUtils {
 			}
 		}
 		String str_html = page.asXml();
-		System.out.println("XML:" + str_html);
 		return str_html;
 	}
 
 	public static void main(String[] args) throws InterruptedException {
-		// String url="https://www.baidu.com/";
 		WebClientUtils util = new WebClientUtils();
-//		String str_url = "http://weixin.sogou.com/gzh?openid=oIWsFt4JERI6aVU7J1rs8Dt3KXGI&ext=_L45N5QlA_UKT-ub2PvBariKo4q1GneO27SYX3LrolBwYHVDZU1rm_CRFk9m4Hy8";
-		String str_url = "http://www.yxtv.cn/portal.php?mod=list&catid=1";
+		String str_url = "http://www.cnblogs.com/Gaojiecai/p/3415146.html";
+		String html = util.getHtml(str_url);
+		System.out.println(html);
 
-//		String str_cookie = util.getCookie(str_url);
-//		System.out.println("Cookie:" + str_cookie);
+        /*String str_url = "http://www.yxtv.cn/portal.php?mod=list&catid=1";
 		String cookie = util.getCookie("http://www.yxtv.cn/");
 		System.out.println(cookie);
 //		util.showBaseInfo(str_url);
 		Thread.sleep(3000);
 		HttpHelper httpHelper = new HttpHelper();
-		System.out.println(httpHelper.sendRequest(str_url,cookie));
+		System.out.println(httpHelper.sendRequest(str_url,cookie));*/
 	}
 }

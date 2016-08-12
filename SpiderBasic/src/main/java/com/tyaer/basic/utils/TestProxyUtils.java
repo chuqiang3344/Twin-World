@@ -27,14 +27,14 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 
 /**
- * 
+ *
  * @author Twin
  *
  */
 public class TestProxyUtils {
 //	private static final String detectProxyUrl = "http://1212.ip138.com/ic.asp";
-	public static final String detectProxyUrl = "http://1212.ip138.com/ic.asp";
-	private static HttpHelper httpHelper=new HttpHelper();
+    public static final String detectProxyUrl = "http://1212.ip138.com/ic.asp";
+	public static HttpHelper httpHelper=new HttpHelper();
 	private static ProxyHelper proxyHelper=new ProxyHelper();
 //	String url = "http://guba.eastmoney.com/list,600036.html";
 	private static SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

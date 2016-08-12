@@ -38,9 +38,10 @@ public class BaiduMeta {
     static String searchUrlx = "http://news.baidu.com/ns?ct=1&rn=20&ie=utf-8&bs=(keywords)&rsv_bp=1&sr=0&cl=2&f=8&prevct=no&tn=news&word=%E5%A5%A5%E8%BF%90%E4%BC%9A&rsv_sug3=1&rsv_sug4=231&rsv_sug1=1&rsv_sug=1";
 
     static SimpleDateFormat sdf_Normal = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
     public static void main(String[] args) {
-        String moduleRootDir=Class.class.getClass().getResource("/").getPath()+"../../";
-        String log4jProperties=moduleRootDir+"configure/log4j.properties";
+        String moduleRootDir = Class.class.getClass().getResource("/").getPath() + "../../";
+        String log4jProperties = moduleRootDir + "configure/log4j.properties";
         PropertyConfigurator.configure(log4jProperties);
         BaiduMeta baiduMeta = new BaiduMeta();
         HttpHelper httpHelper = new HttpHelper();
@@ -57,10 +58,10 @@ public class BaiduMeta {
                 String title = element.select("h3>a").text();
                 String url = element.select("h3>a").attr("abs:href");
                 String[] split = element.select("div>p").text().split("  ");
-                String source=split[0];
+                String source = split[0];
                 Date date = DateUtils.manifoldTimeToNormal(split[1]);
                 String text = element.select("div>div").text();
-                seedResultBean=new SeedResultBean(title,url,source,new Timestamp(date.getTime()),text);
+                seedResultBean = new SeedResultBean(title, url, source, new Timestamp(date.getTime()), text);
                 System.out.println(seedResultBean);
                 break;
             }

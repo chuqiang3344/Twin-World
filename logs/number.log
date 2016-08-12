@@ -24,3 +24,301 @@ logger，searchUrl:http://1212.ip138.com/ic.asp
 ConnectException: Connection timed out: connect
 logger，searchUrl:http://1212.ip138.com/ic.asp
 ConnectException: Connection refused: connect
+logger，searchUrl:http://1212.ip138.com/ic.asp
+ConnectException: Connection timed out: connect
+logger，searchUrl:http://1212.ip138.com/ic.asp
+ConnectException: Connection timed out: connect
+logger，searchUrl:http://1212.ip138.com/ic.asp
+ConnectException: Connection timed out: connect
+logger，searchUrl:http://1212.ip138.com/ic.asp
+SocketTimeoutException: Read timed out
+logger，searchUrl:http://1212.ip138.com/ic.asp
+ConnectException: Connection timed out: connect
+logger，searchUrl:http://1212.ip138.com/ic.asp
+ConnectException: Connection timed out: connect
+logger，searchUrl: http://www.cnblogs.com/Gaojiecai/p/3415146.html
+IOException: Attempted read from closed stream.
+logger，searchUrl: http://www.cnblogs.com/Gaojiecai/p/3415146.html
+IOException: Attempted read from closed stream.
+logger，searchUrl: http://www.cnblogs.com/Gaojiecai/p/3415146.html
+IOException: Attempted read from closed stream.
+IOException: Attempted read from closed stream.
+IOException: Attempted read from closed stream.
+IOException: Attempted read from closed stream.
+IOException: Attempted read from closed stream.
+logger，searchUrl: http://www.cnblogs.com/Gaojiecai/p/3415146.html
+IOException: Attempted read from closed stream.
+logger，searchUrl: http://www.cnblogs.com/Gaojiecai/p/3415146.html
+IOException: Attempted read from closed stream.
+logger，searchUrl: http://www.cnblogs.com/Gaojiecai/p/3415146.html
+IOException: Attempted read from closed stream.
+logger，searchUrl: http://www.cnblogs.com/Gaojiecai/p/3415146.html
+IOException: Attempted read from closed stream.
+logger，searchUrl: http://www.cnblogs.com/Gaojiecai/p/3415146.html
+IOException: mark/reset not supported
+logger，searchUrl: http://idea.iteblog.com/key.php
+NullPointerException: 
+logger，searchUrl: http://idea.iteblog.com/key.php
+NullPointerException: 
+logger，searchUrl: http://idea.iteblog.com/key.php
+NullPointerException: 
+logger，searchUrl: http://idea.iteblog.com/key.php
+java.lang.NullPointerException
+	at com.tyaer.basic.utils.StringHandle.isMessyCode2(StringHandle.java:115)
+	at com.tyaer.basic.net.helper.HttpHelper.responseGetHtml(HttpHelper.java:297)
+	at com.tyaer.basic.net.helper.HttpHelper.sendRequest(HttpHelper.java:134)
+	at com.tyaer.basic.net.helper.HttpHelper.main(HttpHelper.java:562)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+
+logger，searchUrl: http://idea.iteblog.com/key.php
+java.lang.NullPointerException
+	at com.tyaer.basic.utils.StringHandle.isMessyCode2(StringHandle.java:115)
+	at com.tyaer.basic.net.helper.HttpHelper.responseGetHtml(HttpHelper.java:297)
+	at com.tyaer.basic.net.helper.HttpHelper.sendRequest(HttpHelper.java:134)
+	at com.tyaer.basic.net.helper.HttpHelper.main(HttpHelper.java:562)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+
+logger，searchUrl: http://idea.iteblog.com/key.php
+java.lang.NullPointerException
+	at com.tyaer.basic.utils.StringHandle.isMessyCode2(StringHandle.java:115)
+	at com.tyaer.basic.net.helper.HttpHelper.responseGetHtml(HttpHelper.java:297)
+	at com.tyaer.basic.net.helper.HttpHelper.sendRequest(HttpHelper.java:134)
+	at com.tyaer.basic.net.helper.HttpHelper.main(HttpHelper.java:562)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+
+logger，searchUrl: http://idea.iteblog.com/key.php
+java.lang.NullPointerException
+	at com.tyaer.basic.utils.StringHandle.isMessyCode2(StringHandle.java:115)
+	at com.tyaer.basic.net.helper.HttpHelper.responseGetHtml(HttpHelper.java:297)
+	at com.tyaer.basic.net.helper.HttpHelper.sendRequest(HttpHelper.java:134)
+	at com.tyaer.basic.net.helper.HttpHelper.main(HttpHelper.java:562)
+
+logger，searchUrl: http://idea.iteblog.com/key.php
+java.lang.NullPointerException
+	at com.tyaer.basic.utils.StringHandle.isMessyCode2(StringHandle.java:115)
+	at com.tyaer.basic.net.helper.HttpHelper.responseGetHtml(HttpHelper.java:297)
+	at com.tyaer.basic.net.helper.HttpHelper.sendRequest(HttpHelper.java:134)
+	at com.tyaer.basic.net.helper.HttpHelper.main(HttpHelper.java:562)
+
+Error while fetching metadata 	partition 3	leader: none	replicas: 	isr: 	isUnderReplicated: false for topic partition [test1,3]: [class org.apache.kafka.common.errors.LeaderNotAvailableException]
+Error while fetching metadata 	partition 0	leader: none	replicas: 	isr: 	isUnderReplicated: false for topic partition [test1,0]: [class org.apache.kafka.common.errors.LeaderNotAvailableException]
+Failed to send producer request with correlation id 2 to broker 2 with data for partitions [test1,1]
+java.nio.channels.ClosedChannelException
+	at kafka.network.BlockingChannel.send(BlockingChannel.scala:110)
+	at kafka.producer.SyncProducer.liftedTree1$1(SyncProducer.scala:80)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:79)
+	at kafka.producer.SyncProducer$$anonfun$send$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(SyncProducer.scala:110)
+	at kafka.producer.SyncProducer$$anonfun$send$1$$anonfun$apply$mcV$sp$1.apply(SyncProducer.scala:110)
+	at kafka.producer.SyncProducer$$anonfun$send$1$$anonfun$apply$mcV$sp$1.apply(SyncProducer.scala:110)
+	at kafka.metrics.KafkaTimer.time(KafkaTimer.scala:33)
+	at kafka.producer.SyncProducer$$anonfun$send$1.apply$mcV$sp(SyncProducer.scala:109)
+	at kafka.producer.SyncProducer$$anonfun$send$1.apply(SyncProducer.scala:109)
+	at kafka.producer.SyncProducer$$anonfun$send$1.apply(SyncProducer.scala:109)
+	at kafka.metrics.KafkaTimer.time(KafkaTimer.scala:33)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:108)
+	at kafka.producer.async.DefaultEventHandler.kafka$producer$async$DefaultEventHandler$$send(DefaultEventHandler.scala:275)
+	at kafka.producer.async.DefaultEventHandler$$anonfun$dispatchSerializedData$2.apply(DefaultEventHandler.scala:113)
+	at kafka.producer.async.DefaultEventHandler$$anonfun$dispatchSerializedData$2.apply(DefaultEventHandler.scala:105)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.mutable.HashMap$$anonfun$foreach$1.apply(HashMap.scala:99)
+	at scala.collection.mutable.HashMap$$anonfun$foreach$1.apply(HashMap.scala:99)
+	at scala.collection.mutable.HashTable$class.foreachEntry(HashTable.scala:230)
+	at scala.collection.mutable.HashMap.foreachEntry(HashMap.scala:40)
+	at scala.collection.mutable.HashMap.foreach(HashMap.scala:99)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at kafka.producer.async.DefaultEventHandler.dispatchSerializedData(DefaultEventHandler.scala:105)
+	at kafka.producer.async.DefaultEventHandler.handle(DefaultEventHandler.scala:78)
+	at kafka.producer.Producer.send(Producer.scala:78)
+	at kafka.javaapi.producer.Producer.send(Producer.scala:35)
+	at com.tyaer.basic.queue.KafkaProducer.sendXmltoKaf(KafkaProducer.java:63)
+	at com.tyaer.basic.queue.KafkaProducer.main(KafkaProducer.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+Fetching topic metadata with correlation id 3 for topics [Set(test1)] from broker [BrokerEndPoint(0,192.168.2.11,9092)] failed
+java.nio.channels.ClosedChannelException
+	at kafka.network.BlockingChannel.send(BlockingChannel.scala:110)
+	at kafka.producer.SyncProducer.liftedTree1$1(SyncProducer.scala:80)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:79)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:124)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:59)
+	at kafka.producer.BrokerPartitionInfo.updateInfo(BrokerPartitionInfo.scala:83)
+	at kafka.producer.async.DefaultEventHandler$$anonfun$handle$2.apply$mcV$sp(DefaultEventHandler.scala:84)
+	at kafka.utils.CoreUtils$.swallow(CoreUtils.scala:76)
+	at kafka.utils.Logging$class.swallowError(Logging.scala:106)
+	at kafka.utils.CoreUtils$.swallowError(CoreUtils.scala:47)
+	at kafka.producer.async.DefaultEventHandler.handle(DefaultEventHandler.scala:84)
+	at kafka.producer.Producer.send(Producer.scala:78)
+	at kafka.javaapi.producer.Producer.send(Producer.scala:35)
+	at com.tyaer.basic.queue.KafkaProducer.sendXmltoKaf(KafkaProducer.java:63)
+	at com.tyaer.basic.queue.KafkaProducer.main(KafkaProducer.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+Error while fetching metadata 	partition 3	leader: none	replicas: 	isr: 	isUnderReplicated: false for topic partition [test1,3]: [class org.apache.kafka.common.errors.LeaderNotAvailableException]
+Error while fetching metadata 	partition 0	leader: none	replicas: 	isr: 	isUnderReplicated: false for topic partition [test1,0]: [class org.apache.kafka.common.errors.LeaderNotAvailableException]
+Failed to send producer request with correlation id 5 to broker 3 with data for partitions [test1,2]
+java.nio.channels.ClosedChannelException
+	at kafka.network.BlockingChannel.send(BlockingChannel.scala:110)
+	at kafka.producer.SyncProducer.liftedTree1$1(SyncProducer.scala:80)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:79)
+	at kafka.producer.SyncProducer$$anonfun$send$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(SyncProducer.scala:110)
+	at kafka.producer.SyncProducer$$anonfun$send$1$$anonfun$apply$mcV$sp$1.apply(SyncProducer.scala:110)
+	at kafka.producer.SyncProducer$$anonfun$send$1$$anonfun$apply$mcV$sp$1.apply(SyncProducer.scala:110)
+	at kafka.metrics.KafkaTimer.time(KafkaTimer.scala:33)
+	at kafka.producer.SyncProducer$$anonfun$send$1.apply$mcV$sp(SyncProducer.scala:109)
+	at kafka.producer.SyncProducer$$anonfun$send$1.apply(SyncProducer.scala:109)
+	at kafka.producer.SyncProducer$$anonfun$send$1.apply(SyncProducer.scala:109)
+	at kafka.metrics.KafkaTimer.time(KafkaTimer.scala:33)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:108)
+	at kafka.producer.async.DefaultEventHandler.kafka$producer$async$DefaultEventHandler$$send(DefaultEventHandler.scala:275)
+	at kafka.producer.async.DefaultEventHandler$$anonfun$dispatchSerializedData$2.apply(DefaultEventHandler.scala:113)
+	at kafka.producer.async.DefaultEventHandler$$anonfun$dispatchSerializedData$2.apply(DefaultEventHandler.scala:105)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.mutable.HashMap$$anonfun$foreach$1.apply(HashMap.scala:99)
+	at scala.collection.mutable.HashMap$$anonfun$foreach$1.apply(HashMap.scala:99)
+	at scala.collection.mutable.HashTable$class.foreachEntry(HashTable.scala:230)
+	at scala.collection.mutable.HashMap.foreachEntry(HashMap.scala:40)
+	at scala.collection.mutable.HashMap.foreach(HashMap.scala:99)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at kafka.producer.async.DefaultEventHandler.dispatchSerializedData(DefaultEventHandler.scala:105)
+	at kafka.producer.async.DefaultEventHandler.handle(DefaultEventHandler.scala:78)
+	at kafka.producer.Producer.send(Producer.scala:78)
+	at kafka.javaapi.producer.Producer.send(Producer.scala:35)
+	at com.tyaer.basic.queue.KafkaProducer.sendXmltoKaf(KafkaProducer.java:63)
+	at com.tyaer.basic.queue.KafkaProducer.main(KafkaProducer.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+Fetching topic metadata with correlation id 6 for topics [Set(test1)] from broker [BrokerEndPoint(0,192.168.2.11,9092)] failed
+java.nio.channels.ClosedChannelException
+	at kafka.network.BlockingChannel.send(BlockingChannel.scala:110)
+	at kafka.producer.SyncProducer.liftedTree1$1(SyncProducer.scala:80)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:79)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:124)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:59)
+	at kafka.producer.BrokerPartitionInfo.updateInfo(BrokerPartitionInfo.scala:83)
+	at kafka.producer.async.DefaultEventHandler$$anonfun$handle$2.apply$mcV$sp(DefaultEventHandler.scala:84)
+	at kafka.utils.CoreUtils$.swallow(CoreUtils.scala:76)
+	at kafka.utils.Logging$class.swallowError(Logging.scala:106)
+	at kafka.utils.CoreUtils$.swallowError(CoreUtils.scala:47)
+	at kafka.producer.async.DefaultEventHandler.handle(DefaultEventHandler.scala:84)
+	at kafka.producer.Producer.send(Producer.scala:78)
+	at kafka.javaapi.producer.Producer.send(Producer.scala:35)
+	at com.tyaer.basic.queue.KafkaProducer.sendXmltoKaf(KafkaProducer.java:63)
+	at com.tyaer.basic.queue.KafkaProducer.main(KafkaProducer.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+Error while fetching metadata 	partition 3	leader: none	replicas: 	isr: 	isUnderReplicated: false for topic partition [test1,3]: [class org.apache.kafka.common.errors.LeaderNotAvailableException]
+Error while fetching metadata 	partition 0	leader: none	replicas: 	isr: 	isUnderReplicated: false for topic partition [test1,0]: [class org.apache.kafka.common.errors.LeaderNotAvailableException]
+Failed to send producer request with correlation id 8 to broker 2 with data for partitions [test1,1]
+java.nio.channels.ClosedChannelException
+	at kafka.network.BlockingChannel.send(BlockingChannel.scala:110)
+	at kafka.producer.SyncProducer.liftedTree1$1(SyncProducer.scala:80)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:79)
+	at kafka.producer.SyncProducer$$anonfun$send$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(SyncProducer.scala:110)
+	at kafka.producer.SyncProducer$$anonfun$send$1$$anonfun$apply$mcV$sp$1.apply(SyncProducer.scala:110)
+	at kafka.producer.SyncProducer$$anonfun$send$1$$anonfun$apply$mcV$sp$1.apply(SyncProducer.scala:110)
+	at kafka.metrics.KafkaTimer.time(KafkaTimer.scala:33)
+	at kafka.producer.SyncProducer$$anonfun$send$1.apply$mcV$sp(SyncProducer.scala:109)
+	at kafka.producer.SyncProducer$$anonfun$send$1.apply(SyncProducer.scala:109)
+	at kafka.producer.SyncProducer$$anonfun$send$1.apply(SyncProducer.scala:109)
+	at kafka.metrics.KafkaTimer.time(KafkaTimer.scala:33)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:108)
+	at kafka.producer.async.DefaultEventHandler.kafka$producer$async$DefaultEventHandler$$send(DefaultEventHandler.scala:275)
+	at kafka.producer.async.DefaultEventHandler$$anonfun$dispatchSerializedData$2.apply(DefaultEventHandler.scala:113)
+	at kafka.producer.async.DefaultEventHandler$$anonfun$dispatchSerializedData$2.apply(DefaultEventHandler.scala:105)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.mutable.HashMap$$anonfun$foreach$1.apply(HashMap.scala:99)
+	at scala.collection.mutable.HashMap$$anonfun$foreach$1.apply(HashMap.scala:99)
+	at scala.collection.mutable.HashTable$class.foreachEntry(HashTable.scala:230)
+	at scala.collection.mutable.HashMap.foreachEntry(HashMap.scala:40)
+	at scala.collection.mutable.HashMap.foreach(HashMap.scala:99)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at kafka.producer.async.DefaultEventHandler.dispatchSerializedData(DefaultEventHandler.scala:105)
+	at kafka.producer.async.DefaultEventHandler.handle(DefaultEventHandler.scala:78)
+	at kafka.producer.Producer.send(Producer.scala:78)
+	at kafka.javaapi.producer.Producer.send(Producer.scala:35)
+	at com.tyaer.basic.queue.KafkaProducer.sendXmltoKaf(KafkaProducer.java:63)
+	at com.tyaer.basic.queue.KafkaProducer.main(KafkaProducer.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+Error while fetching metadata 	partition 3	leader: none	replicas: 	isr: 	isUnderReplicated: false for topic partition [test1,3]: [class org.apache.kafka.common.errors.LeaderNotAvailableException]
+Error while fetching metadata 	partition 0	leader: none	replicas: 	isr: 	isUnderReplicated: false for topic partition [test1,0]: [class org.apache.kafka.common.errors.LeaderNotAvailableException]
+Failed to send producer request with correlation id 11 to broker 2 with data for partitions [test1,1]
+java.nio.channels.ClosedChannelException
+	at kafka.network.BlockingChannel.send(BlockingChannel.scala:110)
+	at kafka.producer.SyncProducer.liftedTree1$1(SyncProducer.scala:80)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:79)
+	at kafka.producer.SyncProducer$$anonfun$send$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(SyncProducer.scala:110)
+	at kafka.producer.SyncProducer$$anonfun$send$1$$anonfun$apply$mcV$sp$1.apply(SyncProducer.scala:110)
+	at kafka.producer.SyncProducer$$anonfun$send$1$$anonfun$apply$mcV$sp$1.apply(SyncProducer.scala:110)
+	at kafka.metrics.KafkaTimer.time(KafkaTimer.scala:33)
+	at kafka.producer.SyncProducer$$anonfun$send$1.apply$mcV$sp(SyncProducer.scala:109)
+	at kafka.producer.SyncProducer$$anonfun$send$1.apply(SyncProducer.scala:109)
+	at kafka.producer.SyncProducer$$anonfun$send$1.apply(SyncProducer.scala:109)
+	at kafka.metrics.KafkaTimer.time(KafkaTimer.scala:33)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:108)
+	at kafka.producer.async.DefaultEventHandler.kafka$producer$async$DefaultEventHandler$$send(DefaultEventHandler.scala:275)
+	at kafka.producer.async.DefaultEventHandler$$anonfun$dispatchSerializedData$2.apply(DefaultEventHandler.scala:113)
+	at kafka.producer.async.DefaultEventHandler$$anonfun$dispatchSerializedData$2.apply(DefaultEventHandler.scala:105)
+	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:733)
+	at scala.collection.mutable.HashMap$$anonfun$foreach$1.apply(HashMap.scala:99)
+	at scala.collection.mutable.HashMap$$anonfun$foreach$1.apply(HashMap.scala:99)
+	at scala.collection.mutable.HashTable$class.foreachEntry(HashTable.scala:230)
+	at scala.collection.mutable.HashMap.foreachEntry(HashMap.scala:40)
+	at scala.collection.mutable.HashMap.foreach(HashMap.scala:99)
+	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:732)
+	at kafka.producer.async.DefaultEventHandler.dispatchSerializedData(DefaultEventHandler.scala:105)
+	at kafka.producer.async.DefaultEventHandler.handle(DefaultEventHandler.scala:78)
+	at kafka.producer.Producer.send(Producer.scala:78)
+	at kafka.javaapi.producer.Producer.send(Producer.scala:35)
+	at com.tyaer.basic.queue.KafkaProducer.sendXmltoKaf(KafkaProducer.java:63)
+	at com.tyaer.basic.queue.KafkaProducer.main(KafkaProducer.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147)
+Error while fetching metadata 	partition 3	leader: none	replicas: 	isr: 	isUnderReplicated: false for topic partition [test1,3]: [class org.apache.kafka.common.errors.LeaderNotAvailableException]
+Error while fetching metadata 	partition 0	leader: none	replicas: 	isr: 	isUnderReplicated: false for topic partition [test1,0]: [class org.apache.kafka.common.errors.LeaderNotAvailableException]
+Failed to send requests for topics test1 with correlation ids in [0,12]
+No broker partitions consumed by consumer thread 0_Twin-PC-1470898628984-1c6dd199-0 for topic test1
+No broker partitions consumed by consumer thread 0_Twin-PC-1470898628984-1c6dd199-0 for topic test1
+No broker partitions consumed by consumer thread 0_Twin-PC-1470898628984-1c6dd199-0 for topic test1
+No broker partitions consumed by consumer thread 0_Twin-PC-1470898736172-6d54dab0-0 for topic test1
+No broker partitions consumed by consumer thread 0_Twin-PC-1470898628984-1c6dd199-0 for topic test1
+No broker partitions consumed by consumer thread 0_Twin-PC-1470898736172-6d54dab0-0 for topic test1
+No broker partitions consumed by consumer thread 0_Twin-PC-1470898628984-1c6dd199-0 for topic test1
+No broker partitions consumed by consumer thread 0_Twin-PC-1470898736172-6d54dab0-0 for topic test1
+No broker partitions consumed by consumer thread 0_izhonghong-PC-1470898879052-3d29b318-0 for topic test1
+No broker partitions consumed by consumer thread 0_Twin-PC-1470898628984-1c6dd199-0 for topic test1
+No broker partitions consumed by consumer thread 0_Twin-PC-1470898736172-6d54dab0-0 for topic test1
+No broker partitions consumed by consumer thread 0_izhonghong-PC-1470898879052-3d29b318-0 for topic test1
+The configuration zookeeper.session.timeout.ms = 4000 was supplied but isn't a known config.
+The configuration zookeeper.connect = 192.168.2.11:2181 was supplied but isn't a known config.
+The configuration zookeeper.sync.time.ms = 200 was supplied but isn't a known config.

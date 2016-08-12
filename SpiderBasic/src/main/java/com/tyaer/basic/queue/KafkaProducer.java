@@ -4,7 +4,6 @@ import kafka.javaapi.producer.Producer;
 import kafka.producer.KeyedMessage;
 import kafka.producer.ProducerConfig;
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
 
 import java.util.Properties;
 import java.util.concurrent.locks.Lock;
@@ -28,9 +27,10 @@ public class KafkaProducer extends Thread {
 		props.setProperty("serializer.class","kafka.serializer.StringEncoder");
 //      props.setProperty("key.serializer.class", "com.toroot.bean.VehicleSerializer");
 //		props.put("serializer.class", "com.toroot.bean.VehicleDecoder");
-		props.put("metadata.broker.list", "192.168.1.51:9092");
-		producer = new Producer<Integer, String>(
-				new ProducerConfig(props));
+//		props.put("metadata.broker.list", "192.168.1.51:9092");
+		props.put("metadata.broker.list", "192.168.2.11:9092,192.168.2.12:9092,192.168.2.13:9092");
+		props.put("request.required.acks", "1");
+		producer = new Producer<Integer, String>(new ProducerConfig(props));
 	}
 	
 	private static class LazyHolder {
@@ -49,8 +49,7 @@ public class KafkaProducer extends Thread {
 //      props.setProperty("key.serializer.class", "com.toroot.bean.VehicleSerializer");
 //		props.put("serializer.class", "com.toroot.bean.VehicleDecoder");
 		props.put("metadata.broker.list", KAFKA_ADDRESS);
-		producer = new Producer<Integer, String>(
-				new ProducerConfig(props));
+		producer = new Producer<Integer, String>(new ProducerConfig(props));
 	}
 
 	/**
@@ -63,12 +62,14 @@ public class KafkaProducer extends Thread {
 	}
 
 	public static void main(String[] args) {
-    	PropertyConfigurator.configure(System.getProperty("user.dir")+"/configure/log4j.properties");
-//		System.out.println(new SimpleDateFormat("yyyyMMddHHmmss").format(System.currentTimeMillis()));
-		for (int i = 0; i < 10; i++) {
-			KafkaProducer producerThread = new KafkaProducer(i);
-			producerThread.start();
-//			break;
-		}
+//    	PropertyConfigurator.configure(System.getProperty("user.dir")+"/configure/log4j.properties");
+////		System.out.println(new SimpleDateFormat("yyyyMMddHHmmss").format(System.currentTimeMillis()));
+//		for (int i = 0; i < 10; i++) {
+//			KafkaProducer producerThread = new KafkaProducer(i);
+//			producerThread.start();
+////			break;
+//		}
+		KafkaProducer kafkaProducer = new KafkaProducer(1);
+		kafkaProducer.sendXmltoKaf("test1","xxx");
 	}
 }

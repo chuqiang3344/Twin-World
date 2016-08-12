@@ -12,6 +12,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -23,8 +25,9 @@ import java.util.Map;
 public class ProxyTest {
 
     private static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    private static String local_ip;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UnknownHostException {
         ProxyTest proxyTest = new ProxyTest();
         proxyTest.detectSqlProxy("select * from proxy");
 //        proxyTest.crawlProxy_kuaidaili_free();
@@ -83,6 +86,11 @@ public class ProxyTest {
         String regex = "<center>您的IP是：\\[(.*?)\\] 来自：(.*?) (.*?)</center></body>";
         MysqlHelper mysqlHelper = new MysqlHelper("root", "123456", "jdbc:mysql://127.0.0.1:3306/crawlsinaweibo?characterEncoding=UTF-8&rewriteBatchedStatements=true&generateSimpleParameterMetadata=true");
         String replaceSql = "REPLACE INTO proxy(id,proxy_ip,proxy_port,proxy_type,proxy_address,update_time,ping,status,fail_num) values (?,?,?,?,?,?,?,?,?)";
+        if (local_ip == null) {
+            String html = TestProxyUtils.httpHelper.sendRequest(TestProxyUtils.detectProxyUrl);
+            String[] strings = stringHandle.praseRegex(html, regex);
+            local_ip = strings[0];
+        }
         List<Map<String, Object>> proxys = mysqlHelper.findModeResult(sql, null);
         System.out.println(proxys.size());
         for (Map<String, Object> proxy : proxys) {
@@ -101,15 +109,17 @@ public class ProxyTest {
             if (httpResutBean.getStatusCode() == 200) {
                 status = 1;
                 String[] strings = stringHandle.praseRegex(html, regex);
-                proxyBean = new ProxyBean(id, proxy_ip, proxy_port, strings[2], strings[1], update_time, status, fail_num, time);
-                mysqlHelper.replace(replaceSql, proxyBean);
-            } else {
-                System.out.println(html);
-                fail_num++;
-                status = 0;
-                proxyBean = new ProxyBean(id, proxy_ip, proxy_port, null, null, update_time, status, fail_num, time);
-                mysqlHelper.replace(replaceSql, proxyBean);
+                if (!strings[0].equals(local_ip)) {
+                    proxyBean = new ProxyBean(id, proxy_ip, proxy_port, strings[2], strings[1], update_time, status, fail_num, time);
+                    mysqlHelper.replace(replaceSql, proxyBean);
+                    continue;
+                }
             }
+            System.out.println(html);
+            fail_num++;
+            status = 0;
+            proxyBean = new ProxyBean(id, proxy_ip, proxy_port, null, null, update_time, status, fail_num, time);
+            mysqlHelper.replace(replaceSql, proxyBean);
         }
     }
 }

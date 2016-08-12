@@ -47,6 +47,32 @@ public class DatabaseImpl {
     }
 
     /**
+     * replace语句，更新一条数据
+     * @param sql
+     * @param obj
+     */
+    public void replace(String sql,Object obj){
+        Class<?> objClass = obj.getClass();
+        Field[] fields = objClass.getDeclaredFields();
+        ArrayList<Object> grams = new ArrayList<Object>();
+        for (int i = 0; i < fields.length; i++) {
+            String name = fields[i].getName();
+            try {
+                Field f = objClass.getDeclaredField(name);
+                f.setAccessible(true);
+                Object value = f.get(obj);
+                grams.add(value);
+            } catch (NoSuchFieldException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println(grams);
+        updateByPreparedStatement(sql,grams);
+    }
+
+    /**
      * 增加、删除、改
      */
     public boolean updateByPreparedStatement(String sql, List<Object> params) {
