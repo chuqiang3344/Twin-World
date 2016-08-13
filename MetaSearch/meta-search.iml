@@ -56,7 +56,7 @@
     <orderEntry type="module-library">
       <library name="Maven: jdk.tools:jdk.tools:1.6">
         <CLASSES>
-          <root url="jar://D:/Program Files/Java/jdk1.8.0_65/lib/tools.jar!/" />
+          <root url="jar://E:/IDE_Soft/Java/jdk1.8.0_77/jre/../lib/tools.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
