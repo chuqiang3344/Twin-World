@@ -32,7 +32,7 @@
       <module name="api-study" target="1.6" />
       <module name="izhonghong" target="1.6" />
       <module name="meta-search" target="1.5" />
-      <module name="spider-basic" target="1.6" />
+      <module name="spider-basic" target="1.7" />
       <module name="twin-project" target="1.5" />
     </bytecodeTargetLevel>
   </component>

@@ -295,7 +295,6 @@ public class HttpHelper {
             charset1="UTF-8";
             html = EntityUtils.toString(entity,charset1);
         }
-        System.out.println(html);
         /*如果出现乱码则换一种方式解析html*/
         if (StringHandle.isMessyCode(html)) {
             String charset2 = getCharSetByBody(html, charset1);
